@@ -1,0 +1,107 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 80%;
+    width: 100%;
+    background-color: #6f6977;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 7px 7px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.messages {
+    padding: 0;
+    overflow: auto;
+    flex: auto;
+    height: 60vh;
+    color: var(--light-color);
+}
+.message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    margin: 5px 0;
+}
+.messageUser {
+    margin: 0 10px 0 0;
+    color: #E0DFE2;
+}
+.messageText {
+    background-color: #837D8C;
+    border-radius: 5px;
+    padding: 10px;
+    word-wrap: break-word;
+    margin: 0;
+    max-width: 75%;
+}
+.messageTime {
+    margin: 0 0 0 auto;
+    color: #A29EA9;
+}
+.chatBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px 4px 0 0;
+    height: 50px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+.roomId {
+    display: inline-block;
+    margin-left: 5%;
+    color: var(--light-color);
+}
+
+.leaveBtn {
+    border-radius: 5px;
+    color: var(--light-color);
+    text-decoration: none;
+    margin-right: 5%;
+    font-size: 1.5rem;
+    transition: 20ms;
+}
+.leaveBtn:hover {
+    color: var(--main-color);
+    transition: 10ms;
+}
+.form {
+    display: flex;
+}
+
+.input {
+    border: none;
+    padding: 10px 10px 10px 20px;
+    width: 80%;
+    font-size: 1.2rem;
+    color: #fff;
+    flex-grow: 1;
+    background-color: var(--secondary-color);
+}
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+.sendBtn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #65606c;
+    font-weight: 700;
+    border: none;
+    color: var(--light-color);
+    cursor: pointer;
+}
+.sendBtn:hover {
+    background-color: #5b5661;
+}
+

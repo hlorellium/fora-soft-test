@@ -1,0 +1,105 @@
+#root {
+    height: 100vh;
+}
+
+:root {
+    --light-color: #fff;
+    --dark-color: #30323d;
+    --second-dark-color: #797382;
+    --main-color: #ffcdb2;
+    --secondary-color: #797382;
+}
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    align-items: center;
+    background-color: var(--dark-color);
+}
+
+.joinBlock {
+    height: 70vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    font-size: 6rem;
+    padding-bottom: 10px;
+    justify-self: flex-start;
+    color: var(--main-color);
+    margin: 10px;
+}
+
+.loginInput {
+    border-radius: 10px;
+    font-weight: bold;
+    color: #30323d;
+    padding: 15px 20px;
+    width: 50%;
+    height: 50%;
+    border: none;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-right: 10px;
+}
+
+.loginForm {
+    align-self: flex-end;
+    display: flex;
+    min-width: 70%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.loginBtn {
+    cursor: pointer;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.loginBtn:hover {
+    color: var(--light-color);
+}
+
+@media only screen and (max-width: 1000px) {
+    .joinBlock {
+        justify-content: center;
+        align-items: start;
+    }
+    .heading {
+        text-align: center;
+        font-size: 3rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+    }
+    .loginForm {
+        flex-direction: column;
+    }
+    .loginInput {
+        width: 100%;
+        margin: 30px 0 10px 0;
+        text-align: center;
+    }
+    .loginBtn {
+        font-size: 3rem;
+        background-color: var(--light-color);
+    }
+}
